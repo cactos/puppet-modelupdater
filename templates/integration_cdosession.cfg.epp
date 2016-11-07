@@ -1,0 +1,32 @@
+###################################################
+#  This is the config file for CdoSession Bundle  #
+#  eu.cactosfp7.cdosession                        #
+#                                                 #
+#  THIS FILE IS MANAGED BY PUPPET                 #
+#                                                 #
+###################################################
+
+#CDO server properties
+repositoryName = <%= $cactos_modelupdater::repositoryName %>
+cdoEndpoint = <%= $cactos_modelupdater::cdoEndpoint %>
+cdoConnectors = org.eclipse.net4j.connectors
+cdoProtocol = tcp
+
+# Model resources paths - WITHOUT SPACES AT END!!!
+optimisationPlanResource = <%= $cactos_modelupdater::optimisationPlanResource %>
+logicalModelResource = <%= $cactos_modelupdater::logicalModelResource %>
+physicalModelResource = <%= $cactos_modelupdater::physicalModelResource %>
+logicalLoadResource = <%= $cactos_modelupdater::logicalLoadResource %>
+physicalLoadResource = <%= $cactos_modelupdater::physicalLoadResource %>
+architectureTypeResource = <%= $cactos_modelupdater::architectureTypeResource %>
+hypervisorResource = <%= $cactos_modelupdater::hypervisorResource %>
+
+#Cactos User properties
+cactoOptUser = <%= $cactos_modelupdater::cactoOptUser %>
+cactoOptPassword = <%= $cactos_modelupdater::cactoOptPassword %>
+
+cactoScaleUser = <%= $cactos_modelupdater::cactoScaleUser %>
+cactoScalePassword = <%= $cactos_modelupdater::cactoScalePassword %>
+
+cactoSimUser = <%= $cactos_modelupdater::cactoSimUser %>
+cactoSimPassword = <%= $cactos_modelupdater::cactoSimPassword %>
